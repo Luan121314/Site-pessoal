@@ -1,0 +1,42 @@
+
+.aside-main, .section-main{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(126, 126, 126);  
+    background-color: rgba(240, 248, 255, 0.219);
+    box-shadow: 5px 5px 5px #000;
+    
+}
+.aside-main{
+    border-radius: 5px;
+    height: fit-content;
+    overflow: overlay;
+}
+.aside-content{
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    color: rgb(235, 235, 235);
+    
+}
+.section-content{
+   color: rgb(235, 235, 235);
+    text-align: justify;
+    margin: 5px;
+    width: 100%;
+    padding: 5px;
+}
+.section-content img{
+    width: 30%;
+    border: 1px dashed #000;
+    padding: 3px;
+    float: left;
+    margin: 1%;
+    
+}
+.section-content H1, .aside-content > h1{
+    font-size: 17pt;
+}
+
+

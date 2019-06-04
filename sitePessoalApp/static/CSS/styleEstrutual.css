@@ -1,0 +1,115 @@
+      /* --------------configuração do header------------------ */
+*{
+    text-shadow: 0.3px 0.3x 1px #fff;
+}
+
+header {
+background: -webkit-linear-gradient(rgb(117, 117, 117) ,rgb(150, 172, 172));
+background-repeat: repeat;
+background-size: 100%;
+margin: 0;
+}
+.header-wrap h1 , .header-wrap span{
+    text-shadow: 0.9px 0.5px 5px #fff;
+}
+.header-wrap h1 {
+    color: #fff;
+}
+
+.header-wrap span {
+    color: #f00;
+}
+
+.header-wrap-name {
+    display: flex;
+    justify-content: flex-end;
+}
+.header-wrap-links {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(204, 204, 204, 0.459);
+    box-shadow: 2px -1px 5px;
+}
+.header-wrap-links a {
+    margin: 1% 1%;
+}
+
+.header-wrap-name h2 {
+    padding-right: 15px;
+    text-shadow: 1px 1px 8px #ccc;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.651), rgba(226, 226, 226, 0.671));
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    
+}
+.header-wrap-name a{
+    text-decoration: none;
+}
+
+
+/* -------------------Configuração do main---------------- */
+
+main {
+    background-image: url("/static/imagens/img1.jpeg ");
+    background-repeat: no-repeat; 
+    z-index: -10;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 5px 0;
+
+}   
+.blackSkin{
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    
+}
+/*----------------- configuração do footer--------------- */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px 0;
+  
+}
+.footer-content{
+    background: -webkit-linear-gradient(rgb(117, 117, 117) ,rgb(150, 172, 172));
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+.footer-links img{
+    width: 30px;
+    height: 30px;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    margin: 0 7px;
+
+}
+.final-footer{
+    color: #fff;
+}
+
+/* -----------------classes ativadas via js -------------*/
+
+.sticky {
+    transition-duration: 0.5s;
+    transform: translateY(-40%);
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    /* -webkit-transition-timing-function: ease-in-out; */
+}
+.espacarLinks{
+    transition-duration: 1s;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    /* -webkit-transition-timing-function: ease-out;     */
+
+}
