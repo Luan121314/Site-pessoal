@@ -38,14 +38,14 @@
             <h1>Meu site <span>pessoal</span></h1>
         </div>
         <div class=" header-wrap-name col-md-12   ">
-            <a href="index.html">
+            <a href="{% url 'index' %}">
                 <h2>Luan Correia Neves</h2>
             </a>
         </div>
         <nav class="header-wrap-links col-md-7">
-            <a class="btn btn-light btn-sm " href="index.html">Home</a>
-            <a class="btn btn-light btn-sm" href="meusCursos.html">Meus cursos</a>
-            <a class="btn btn-light btn-sm" href="contato.html">Contato</a>
+            <a class="btn btn-light btn-sm " href="{% url 'index' %}">Home</a>
+            <a class="btn btn-light btn-sm" href="{% url 'cursos' %}">Meus cursos</a>
+            <a class="btn btn-light btn-sm" href=" {% url 'contato' %} ">Contato</a>
         </nav>
     </header>
 

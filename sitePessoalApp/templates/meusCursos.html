@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- <script defer src="js/scriptEstrutural.js"></script> -->
+
+
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="{% static 'CSS/styleEstrutual.css'%}">
+    <link rel="stylesheet" href="{% static 'CSS/styleMainMeusCursos.css'%}">
+
+    <title>Meus cursos</title>
+</head>
+
+
+<body class="container">
+
+    <header class="sticky-top header row">
+        <div class="header-wrap col-md-6">
+            <h1>Meu site <span>pessoal</span></h1>
+        </div>
+        <div class=" header-wrap-name col-md-12   ">
+            <a href="{% url 'index' %}">
+                <h2>Luan Correia Neves</h2>
+            </a>
+        </div>
+        <nav class="header-wrap-links col-md-7">
+            <a class="btn btn-light btn-sm " href="{% url 'index' %}">Home</a>
+            <a class="btn btn-light btn-sm" href="{% url 'cursos' %}">Meus cursos</a>
+            <a class="btn btn-light btn-sm" href=" {% url 'contato' %} ">Contato</a>
+        </nav>
+    </header>
+
+    <main class="main-content ">
+
+        <div class="blackSkin row">
+            <div class="card-box card col-12 col-sm-12 col-md-4  ">
+                <div class="card-header">
+                    Curso Técnico
+                </div>
+                <h1 class="card-title"></h1>
+                <P>Faculdade Carlos Drummond de Andrade 1500(horas).</P>
+                <p class="card-text"> Técnico em Mecatrônica </p>
+
+            </div>
+
+            <div class=" card-box card col-12 col-sm-12 col-md-4">
+                <div class="card-header">
+                    Curso extracurricular
+                </div>
+
+                <p class="card-title">MadCode – 32(horas)</p>
+                <p class="card-text">Curso de app Development – DEV Android Kotlin</p>
+
+            </div>
+
+            <div class="card-box card col-12 col-sm-12 col-md-4 ">
+                <div class="card-header">
+                    Curso extracurricular
+                </div>
+
+                <p class="card-title"> Curso de app Development – DEV Android Kotlin</p>
+                <p class="card-text">HTLM, CSS, GIT, GITHUB, Lógica de programação, JavaScript, Python, Django, Banco de
+                    dados, MVC</p>
+
+            </div>
+
+            <div class="card-box card col-12 col-sm-12 col-md-4 ">
+                <div class="card-header">
+                    Curso extracurricular
+                </div>
+                <p class="card-title">Mastertech / Facebook – 16(horas)</p>
+                <p class="card-text">Introdução a HTML,CSS e JavaScript</p>
+
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer class="footer-content row">
+        <div class="footer-links col-md-12">
+
+            <a href="https://www.facebook.com/luan.correa.562" target="blank">
+                <img src="{% static 'icons/facebook-app-logo.png' %}">
+            </a>
+
+            <a href="https://github.com/Luan121314" target="blank">
+                <img src="{% static 'icons/github-sign.png' %}">
+            </a>
+
+            <a href="https://www.linkedin.com/in/luan-neves-4a320717b/" target="blank">
+                <img src="{% static 'icons/linkedin-logo.png' %}">
+            </a>
+
+        </div>
+
+        <div class="final-footer col-md-12 "> Luan.staner © 2019</div>
+    </footer>
+</body>
+
+</html>
