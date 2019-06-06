@@ -15,15 +15,15 @@ def contato(request):
     return render(request, 'contato.html')
 
 def saveContato(request):
-    dado = auth.User
-    nome = request.POST['name']
-    email = request.POST['email']
-    texto = request.POST['txtTextArea']
-    new_DadosContato = DadosContato(nome=nome, email=email, texto=texto, author= default)
-    
-    # new_DadosContato.save()
 
-    dado = "Salvo !"
+    if request.method == 'POST':
+        authorDado = request.user
+        nameDado = request.POST['name']
+        emailDado = request.POST['email']
+        textoDado = request.POST['txtTextArea']
+        new_DadosContato = DadosContato(author = authorDado,  nome=nameDado, email=emailDado, texto=textoDado)
+        new_DadosContato.save()
+        dado = nameDado + ", sua menssagem foi enviada com sucesso"
 
     return render(request, 'contato.html', {'dadaRetornado': dado
     })

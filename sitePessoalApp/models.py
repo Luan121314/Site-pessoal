@@ -5,9 +5,9 @@ from django.utils import timezone
 
 class DadosContato(models.Model):
     def __str__(self):
-        return self.texto
+        return self.nome
 
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE )
     nome = models.CharField(max_length=40)
     email = models.CharField(max_length=40)
     texto = models.CharField(max_length=300)
