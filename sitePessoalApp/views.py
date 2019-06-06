@@ -1,6 +1,4 @@
 from django.shortcuts import render
-
-
 from .models import DadosContato
 
 # Create your views here.
@@ -15,15 +13,14 @@ def contato(request):
     return render(request, 'contato.html')
 
 def saveContato(request):
-
+    
     if request.method == 'POST':
-        authorDado = request.user
+        userNameSystemDado = request.user.username
         nameDado = request.POST['name']
         emailDado = request.POST['email']
         textoDado = request.POST['txtTextArea']
-        new_DadosContato = DadosContato(author = authorDado,  nome=nameDado, email=emailDado, texto=textoDado)
+        new_DadosContato = DadosContato(nomeSis=userNameSystemDado, nome=nameDado, email=emailDado, texto=textoDado)
         new_DadosContato.save()
         dado = nameDado + ", sua menssagem foi enviada com sucesso"
 
-    return render(request, 'contato.html', {'dadaRetornado': dado
-    })
+    return render(request, 'contato.html', {'dadaRetornado': dado})
