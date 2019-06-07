@@ -1,1 +1,1 @@
-web: gunicorn opiniao.wsgi
+web: gunicorn Site-pessoal.wsgi
