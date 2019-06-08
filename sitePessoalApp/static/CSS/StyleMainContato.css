@@ -1,8 +1,10 @@
 .boxForm{
-    width: 50%;
+    width: 80%;
 }
 form{
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 
 }
 form input, form textarea{
