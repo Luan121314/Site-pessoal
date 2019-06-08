@@ -38,9 +38,6 @@ margin: 0;
     padding-right: 15px;
     text-shadow: 1px 1px 8px #ccc;
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.651), rgba(226, 226, 226, 0.671));
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-    
 }
 .header-wrap-name a{
     text-decoration: none;
@@ -55,7 +52,7 @@ main {
     z-index: -10;
     background-attachment: fixed;
     background-size: 100%;
-    margin: 5px 0;
+    margin:  -2px;
 
 }   
 .blackSkin{
@@ -93,23 +90,3 @@ footer {
     color: #fff;
 }
 
-/* -----------------classes ativadas via js -------------*/
-
-.sticky {
-    transition-duration: 0.5s;
-    transform: translateY(-40%);
-    z-index: 10;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    /* -webkit-transition-timing-function: ease-in-out; */
-}
-.espacarLinks{
-    transition-duration: 1s;
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    /* -webkit-transition-timing-function: ease-out;     */
-
-}

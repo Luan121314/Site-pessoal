@@ -39,4 +39,10 @@
     font-size: 17pt;
 }
 
+@media (max-width: 990px){
+    .aside-main{
+        margin-bottom: 5px;
+    }
+}
+
 

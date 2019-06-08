@@ -1,5 +1,5 @@
 .boxForm{
-    width: 80%;
+    width: 50%;
 }
 form{
     margin-top: 10px;
@@ -16,5 +16,11 @@ form button{
 }
 *{
     color: rgb(235, 235, 235);
+}
+
+@media( max-width: 600px  ){
+    .boxForm{
+        width: 80%;
+    }
 }
 
