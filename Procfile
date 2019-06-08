@@ -1,1 +1,1 @@
-web: gunicorn Site-pessoal.wsgi
+web: gunicorn sitePessoalApp.wsgi
