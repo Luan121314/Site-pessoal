@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'yvki)!@=h4l2j=0(maj_slht9coqq2e+2ou+y7m#_jwmbf)+jj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -32,7 +32,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+   
     'sitePessoalApp',
+    'verifica',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
