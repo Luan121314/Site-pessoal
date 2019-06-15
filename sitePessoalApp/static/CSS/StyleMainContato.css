@@ -1,26 +1,44 @@
-.boxForm{
+.boxForm {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-form{
+.alertaSucesso{
+    color: rgb(113, 236, 113);
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 700;
+    font-size: 20pt;
+    text-align: center;
+}
+
+form {
     margin-top: 10px;
     display: flex;
     justify-content: center;
 
 }
-form input, form textarea{
+
+.boxForm label {
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
     border-radius: 5px;
     margin: 5px 0;
 }
-form button{
+
+form button {
     margin: 10px 0;
 }
-*{
+
+* {
     color: rgb(235, 235, 235);
 }
 
-@media( max-width: 600px  ){
-    .boxForm{
+@media(max-width: 600px) {
+    .boxForm {
         width: 80%;
     }
 }
-
